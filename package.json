@@ -1,0 +1,12 @@
+{
+  "name": "peter-assi-github-io",
+  "private": true,
+  "scripts": {
+    "build:html": "python3 build-theme-variants.py",
+    "build:pdf": "node build-pdf.mjs",
+    "build": "npm run build:html && npm run build:pdf"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.0"
+  }
+}
