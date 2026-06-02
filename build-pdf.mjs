@@ -7,7 +7,7 @@ import { chromium } from "playwright";
 
 const repoDir = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(repoDir, "dist");
-const sourcePath = path.join(distDir, "slate.html");
+const sourcePath = path.join(distDir, "index.html");
 const outputPath = path.join(distDir, "resume.pdf");
 
 const mimeTypes = {
@@ -67,7 +67,7 @@ async function main() {
 
   try {
     const page = await browser.newPage();
-    await page.goto(`${url}/slate.html`, { waitUntil: "networkidle" });
+    await page.goto(`${url}/index.html`, { waitUntil: "networkidle" });
     await page.emulateMedia({ media: "print" });
     await page.pdf({
       path: outputPath,
