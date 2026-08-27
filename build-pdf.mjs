@@ -8,7 +8,7 @@ import { chromium } from "playwright";
 const repoDir = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(repoDir, "dist");
 const sourcePath = path.join(distDir, "index.html");
-const outputPath = path.join(distDir, "resume.pdf");
+const outputPath = path.join(distDir, "peter-assi-geijer-resume.pdf");
 
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",

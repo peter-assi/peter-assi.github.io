@@ -6,7 +6,7 @@ Static resume site for GitHub Pages.
 
 - `index.html` is the source document and default homepage.
 - `build-theme-variants.py` copies the single source document into `dist/index.html`.
-- `build-pdf.mjs` generates `dist/resume.pdf` from `dist/index.html`.
+- `build-pdf.mjs` generates `dist/peter-assi-geijer-resume.pdf` from `dist/index.html`.
 
 ## Local Build
 
@@ -19,7 +19,7 @@ npm run build
 Generated output lands in `dist/`:
 
 - `dist/index.html`
-- `dist/resume.pdf`
+- `dist/peter-assi-geijer-resume.pdf`
 
 ## GitHub Pages
 
